@@ -50,11 +50,11 @@
 
 #### Introduction
 
-Dans cet demo, je vais montrer comment construire un middleware service en utilisant Spring Boot a l'aide de certaines dependances telles que le Feign client, Lombok etc...
-Ce middleware vous permet d'envoyer une requete HTTP a plusieurs API(Application Programming Interface) differentes. Mais il serait
+Dans cet demo, je vais montrer comment construire un middleware service en utilisant Spring Boot à l'aide de certaines dependances telles que le Feign client, Lombok etc...
+Ce middleware vous permet d'envoyer une requête HTTP à plusieurs API(Application Programming Interface) différentes. Mais il serait
 plus facile de combiner uniquement ce dont vous avez besoin de ces differentes API en une seule API.
 Un middleware applicatif nous permet d'avoir une source de données uniques et personnalisée. L'un des principaux avantages d'avoir 
-un middleware est qu'il connecte de nombreux produits et services differents dans un systeme partagé.
+un middleware est qu'il connecte de nombreux produits et services différents dans un système partagé.
 Alors qu'est-ce qu'un middleware exactement?
 
 #### Middleware :
@@ -70,19 +70,19 @@ les middlewares peuvent rendre rentables le développement et l'exécution d'app
 
 #### Feign :
 
-Le feign est un service Web déclaratif créé par Netflix qui fournit un degré élevé d'abstraction pour effectuer des appels d'API REST(Representational State Transfer). De meme, il supprime le besoin d'écrire des codes de requetes HTTP de base tout en offrant simultanément efficacité et netteté au code source.
+Le feign est un service Web déclaratif créé par Netflix qui fournit un degré élevé d'abstraction pour effectuer des appels d'API REST(Representational State Transfer). De même, il supprime le besoin d'écrire des codes de requetes HTTP de base tout en offrant simultanément efficacité et netteté au code source.
 
-Par souci de simplicité, nous ferons des appels a un vrai service d'API REST nommé `employee-backend-service` utilisé pour les tests.
+Par souci de simplicité, nous ferons des appels  à un vrai service d'API REST nommé `employee-backend-service` utilisé pour les tests.
 
-A la fin de cet article, le lecteur doit comprendre ce qu'est un middleware et savoir quand et comment l'utitliser.De meme, ils doivent se familiariser avec le service Web de Feign Client.
+A la fin de cet article, le lecteur doit comprendre ce qu'est un middleware et savoir quand et comment l'utitliser.De même, ils doivent se familiariser avec le service Web de Feign Client.
 
 ### Technologies utilisés:
 
 - Java 17
 - Spring Boot 2.6.4
-- Maven
+- Maven 3.x
 - Lombok
-- Docker Desktop
+- Docker Desktop 20.10.23
 - IntelliJ Ultumate
 - Postman
 
