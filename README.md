@@ -317,8 +317,7 @@ spring.application.name = "department-service"
 ![department-server](https://user-images.githubusercontent.com/82464964/221433980-72407676-edbf-4895-82b6-e6f0291366c7.PNG)
 
 ### Postman pour tester les APIs
-```
+
  
- <a href="">Les captures d'écrans</a>
+<a href="">Les captures d'écrans</a>
 	
-```
