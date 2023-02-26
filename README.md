@@ -327,3 +327,13 @@ spring.application.name = "department-service"
 ![count](https://user-images.githubusercontent.com/97687670/173397936-1e367496-f5f6-4400-a0b7-bebb356532c7.PNG)
 ### All data in the database
 ![all-data](https://user-images.githubusercontent.com/97687670/173398034-9bf9c736-aa16-4446-b1e0-acc485183765.PNG)
+	
+	
+	###
+![all-employy-by-department](https://user-images.githubusercontent.com/82464964/221433958-6c7e3c3f-326d-43ee-91b4-6639352e19f5.PNG)
+![delete-employee-via-department-service](https://user-images.githubusercontent.com/82464964/221433973-59038ef2-cbc6-4cc3-926b-eee9526a629b.PNG)
+![department-server](https://user-images.githubusercontent.com/82464964/221433980-72407676-edbf-4895-82b6-e6f0291366c7.PNG)
+![department-service-project](https://user-images.githubusercontent.com/82464964/221433992-3e65c564-84db-4030-bf95-9e9b0dbb895e.PNG)
+![employee-server](https://user-images.githubusercontent.com/82464964/221433997-cacd9f67-bd83-44c0-b9d3-4d325a27a73a.PNG)
+![addemployee-via-department-service](https://user-images.githubusercontent.com/82464964/221434014-08a3777c-edb2-45fa-832d-265c6e577e39.PNG)
+![find-employee-via-department-service](https://user-images.githubusercontent.com/82464964/221434022-883e3126-a431-4c7d-9980-56447298b5a0.PNG)
