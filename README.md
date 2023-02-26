@@ -48,6 +48,8 @@
 
 # Building a Middleware Service using Open FeignIntroduction:
 
+#### Introduction
+
 Dans cet demo, je vais montrer comment construire un middleware service en utilisant Spring Boot a l'aide de certaines dependances telles que le Feign client, Lombok etc...
 Ce middleware vous permet d'envoyer une requete HTTP a plusieurs API(Application Programming Interface) differentes. Mais il serait
 plus facile de combiner uniquement ce dont vous avez besoin de ces differentes API en une seule API.
@@ -55,7 +57,7 @@ Un middleware applicatif nous permet d'avoir une source de données uniques et p
 un middleware est qu'il connecte de nombreux produits et services differents dans un systeme partagé.
 Alors qu'est-ce qu'un middleware exactement?
 
-Middleware :
+#### Middleware :
 Selon <a href="">Red Had</a>, Les middlewares sont des logiciels et des services en cloud qui fournissent des services et des capacités communs aux applications et aident les développeurs 
 et les opérateurs à créer et à déployer des applications plus efficacement. Le middleware agit comme le tissu conjonctif entre les applications, les données et les utilisateurs.
 
@@ -67,7 +69,7 @@ traités par les middlewares.
 Aujourd'hui, le middleware est la base technologique des architectures cloud-native modernes. Pour les organisations disposant d'environnements multi-clouds et conteneurisés, 
 les middlewares peuvent rendre rentables le développement et l'exécution d'applications à grande échelle.
 
-Feign :
+#### Feign :
 
 Le feign est un service Web déclaratif créé par Netflix qui fournit un degré élevé d'abstraction pour effectuer des appels d'API REST(Representational State Transfer).
 De meme, il supprime le besoin d'écrire des codes de requetes HTTP de base tout en offrant simultanément efficacité et netteté au code source.
@@ -76,16 +78,17 @@ Par souci de simplicité, nous ferons des appels a un vrai service d'API REST no
 
 A la fin de cet article, le lecteur doit comprendre ce qu'est un middleware et savoir quand et comment l'utitliser.De meme, ils doivent se familiariser avec le service Web de Feign Client.
 
-Technologies utilises:
+### Technologies utilises:
 
 Java 17
 Spring Boot 2.6.4
+Maven
 Lombok
 Docker Desktop
 IntelliJ Ultumate
 Postman
 
-COMMENCONS:
+### Commençons:
 
 Tout d'abord, nous devons creer deux projets Spring Boot. Pour ce faire, nous utilisons <a href="">Spring Initializr<a>.Ensuite, nous ajouterons pour chaque projet les dependances telles que :
 
@@ -96,6 +99,6 @@ Tout d'abord, nous devons creer deux projets Spring Boot. Pour ce faire, nous ut
 En cliquant sur "Generate", un dossier zip sera telecharger. Extrayez le contenu, puis ouvrez le projet avec un IDE. L'IDE que j'utiliserai est IntelliJ.
 
 Pour cet demo, j'ai juste prefere de ne pas utiliser une base de donnees. Je vais stocker les donnees de chacune des applications dans un tableau dynamique Java(ArrayList}.
-NB:
+### NB:
 A chaque fois que vous redemarrez l'application, vous perdrez toutes les donnees que vous avez deja enregistre via l'API REST.
 
