@@ -292,13 +292,13 @@ spring.application.name = "department-service"
 # Architecture des projets
  
  - Pour `employee-backend-service`
-```	
+	
 ![employee-service-project](https://user-images.githubusercontent.com/82464964/221434220-2cadbe3b-aa7a-4d49-b880-3f73f85f6e38.PNG)
-```
+
  - Pour `department-backend-service`
- ```
+ 
 ![department-service-project](https://user-images.githubusercontent.com/82464964/221434204-48e6b34f-4236-42e2-9b20-e54be1222ad2.PNG)
-```
+
  ```
  ##  Run les projets Spring Boot 
  ```
