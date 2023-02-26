@@ -290,50 +290,39 @@ spring.application.name = "department-service"
  
  - Pour `employee-backend-service`
  
- ![Project](https://user-images.githubusercontent.com/97687670/173406499-b44a75b6-aa2d-4929-a2fe-98497827dba4.PNG)
+![employee-service-project](https://user-images.githubusercontent.com/82464964/221434220-2cadbe3b-aa7a-4d49-b880-3f73f85f6e38.PNG)
  
  - Pour `department-backend-service`
  
- ![Project](https://user-images.githubusercontent.com/97687670/173406499-b44a75b6-aa2d-4929-a2fe-98497827dba4.PNG)
+![department-service-project](https://user-images.githubusercontent.com/82464964/221434204-48e6b34f-4236-42e2-9b20-e54be1222ad2.PNG)
 
  
- ##  Spring Boot 
+ ##  Run les projets Spring Boot 
  
  ```
  mvn clean install
  
  mvn spring-boot:run
 ```
- 
- ### Testing With Postman
- 
-### Get all employees 
-![00](https://user-images.githubusercontent.com/97687670/173397128-f38ab287-b7f4-4ccd-8618-d7bff4e3bb49.PNG)
-### Save employee
-![01](https://user-images.githubusercontent.com/97687670/173397164-347b38da-8d3c-4e71-9946-77eba1a33000.PNG)
-### Save employee again
-![02](https://user-images.githubusercontent.com/97687670/173397181-6c4f2824-62df-4d5c-a98c-a38c64dfe23a.PNG)
-### Get all employees
-![05](https://user-images.githubusercontent.com/97687670/173397590-9176a395-7c8a-41f6-bbdd-61ea68989687.PNG)
-### Get employee by id
-![03](https://user-images.githubusercontent.com/97687670/173400014-eb236cc7-a5a9-4d7f-8acb-50727cd582dc.PNG)
-### Get employee by a valid id
-![04](https://user-images.githubusercontent.com/97687670/173399137-185424c2-7b6b-4ecb-8b11-abc78884baec.PNG)
-### Edit employee by id
-![edit](https://user-images.githubusercontent.com/97687670/173397899-6c0f28f6-1ee1-4d0c-a16d-56e46dc0a2ce.PNG)
-### Delete employee by id
-![delete](https://user-images.githubusercontent.com/97687670/173397922-dfa3d458-b73e-45b6-87fd-09645791343b.PNG)
-### Get the number of employees that exist in the database
-![count](https://user-images.githubusercontent.com/97687670/173397936-1e367496-f5f6-4400-a0b7-bebb356532c7.PNG)
-### All data in the database
-![all-data](https://user-images.githubusercontent.com/97687670/173398034-9bf9c736-aa16-4446-b1e0-acc485183765.PNG)
+ - Pour `employee-backend-service`
 	
-	
-	###
-![all-employy-by-department](https://user-images.githubusercontent.com/82464964/221433958-6c7e3c3f-326d-43ee-91b4-6639352e19f5.PNG)
-![delete-employee-via-department-service](https://user-images.githubusercontent.com/82464964/221433973-59038ef2-cbc6-4cc3-926b-eee9526a629b.PNG)
-![department-server](https://user-images.githubusercontent.com/82464964/221433980-72407676-edbf-4895-82b6-e6f0291366c7.PNG)
-![department-service-project](https://user-images.githubusercontent.com/82464964/221433992-3e65c564-84db-4030-bf95-9e9b0dbb895e.PNG)
 ![employee-server](https://user-images.githubusercontent.com/82464964/221433997-cacd9f67-bd83-44c0-b9d3-4d325a27a73a.PNG)
-![addemployee-via-department-service](https://user-images.githubusercontent.com/82464964/221434014-08a3777c-edb2-45fa-832d-265c6e577e39.PNG)
+	
+- Pour `department-backend-service`
+	
+![department-server](https://user-images.githubusercontent.com/82464964/221433980-72407676-edbf-4895-82b6-e6f0291366c7.PNG)
+	
+ ### Postman pour tester les APIs
+ 
+### Getting all employees via employee-backend-service
+![all-employees-via-employee-service](https://user-images.githubusercontent.com/82464964/221434185-d2ecad76-a368-43c2-9038-b7d738ebd501.PNG)
+### Getting all employees via department-backend-service
+![all-employees-via-department-service](https://user-images.githubusercontent.com/82464964/221434181-ef28c2cd-1b2f-468c-8fcd-75681d81839b.PNG)
+### Getting all employees by department name via department-backen-service
+![all-employy-by-department](https://user-images.githubusercontent.com/82464964/221433958-6c7e3c3f-326d-43ee-91b4-6639352e19f5.PNG)
+### Getting employee by id
 ![find-employee-via-department-service](https://user-images.githubusercontent.com/82464964/221434022-883e3126-a431-4c7d-9980-56447298b5a0.PNG)
+### Adding new employee
+![addemployee-via-department-service](https://user-images.githubusercontent.com/82464964/221434014-08a3777c-edb2-45fa-832d-265c6e577e39.PNG)
+### Delete employee by id
+![delete-employee-via-department-service](https://user-images.githubusercontent.com/82464964/221433973-59038ef2-cbc6-4cc3-926b-eee9526a629b.PNG)
