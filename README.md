@@ -274,31 +274,21 @@ En cliquant sur "Generate", un dossier zip sera télécharger. Extrayez le conte
 
 Pour cet demo, j'ai juste préféré de ne pas utiliser une base de données.
 Je vais stocker les données de chacune des applications dans un tableau dynamique Java(ArrayList).
-#### NB:
+# NB:
 N'oubliez pas qu'à chaque fois que vous redémarrez l'application, vous perdrez toutes les données que vous avez déjà enregistré via l'API REST.
 
 - Configure Spring Datasource, App properties
 Ouvrez `src/main/resources/application.properties`
  
 - Pour `employee-backend-service`:
-
-```
-server.port = 8082
-!#	
+server.port = 8082	
 spring.application.name = "employee-service"
 
-```
-
 - Pour `department-backend-service`
-	
-```
 server.port = 8081
-!#
 spring.application.name = "department-service"
  
-```
- 
-### Architecture des projets
+# Architecture des projets
  
  - Pour `employee-backend-service`
  
