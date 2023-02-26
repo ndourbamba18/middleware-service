@@ -314,15 +314,4 @@ spring.application.name = "department-service"
 	
  ### Postman pour tester les APIs
  
-### Getting all employees via employee-backend-service
-![all-employees-via-employee-service](https://user-images.githubusercontent.com/82464964/221434185-d2ecad76-a368-43c2-9038-b7d738ebd501.PNG)
-### Getting all employees via department-backend-service
-![all-employees-via-department-service](https://user-images.githubusercontent.com/82464964/221434181-ef28c2cd-1b2f-468c-8fcd-75681d81839b.PNG)
-### Getting all employees by department name via department-backen-service
-![all-employy-by-department](https://user-images.githubusercontent.com/82464964/221433958-6c7e3c3f-326d-43ee-91b4-6639352e19f5.PNG)
-### Getting employee by id
-![find-employee-via-department-service](https://user-images.githubusercontent.com/82464964/221434022-883e3126-a431-4c7d-9980-56447298b5a0.PNG)
-### Adding new employee
-![addemployee-via-department-service](https://user-images.githubusercontent.com/82464964/221434014-08a3777c-edb2-45fa-832d-265c6e577e39.PNG)
-### Delete employee by id
-![delete-employee-via-department-service](https://user-images.githubusercontent.com/82464964/221433973-59038ef2-cbc6-4cc3-926b-eee9526a629b.PNG)
+ <a href="">Les captures d'ecrans</a>
