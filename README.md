@@ -179,7 +179,7 @@ Tout d'abord, nous devons créer deux projets Spring Boot. Pour ce faire, nous u
 </project>
 
 ```xml  
-
+###
 - pom.xml pour `department-backend-service`
  
  ```xml
@@ -268,35 +268,37 @@ Tout d'abord, nous devons créer deux projets Spring Boot. Pour ce faire, nous u
 </project>
 
  ```xml
+####
 
-En cliquant sur "Generate", un dossier zip sera télécharger. 
-  Extrayez le contenu, puis ouvrez le projet avec un IDE. 
-  L'IDE que j'utiliserai est IntelliJ.
+En cliquant sur "Generate", un dossier zip sera télécharger. Extrayez le contenu, puis ouvrez le projet avec un IDE. L'IDE que j'utiliserai est IntelliJ.
 
 Pour cet demo, j'ai juste préféré de ne pas utiliser une base de données.
- Je vais stocker les données de chacune des applications dans un tableau dynamique Java(ArrayList).
+Je vais stocker les données de chacune des applications dans un tableau dynamique Java(ArrayList).
 #### NB:
-N'oubliez pas qu'à chaque fois que vous redémarrez l'application, vous perdrez toutes les données que vous avez déjà 
-	enregistré via l'API REST.
+N'oubliez pas qu'à chaque fois que vous redémarrez l'application, vous perdrez toutes les données que vous avez déjà enregistré via l'API REST.
 
+###
 - Configure Spring Datasource, App properties
 Ouvrez `src/main/resources/application.properties`
  
 - Pour `employee-backend-service`:
+###
 ```
-- application.properties
-server.port = 8082
-spring.application.name = "employee-service"
+
+- server.port = 8082
+- spring.application.name = "employee-service"
 
 ```
+###
 - Pour `department-backend-service`
+###
 ```
-server.port = 8081
-spring.application.name = "department-service"
+- server.port = 8081
+- spring.application.name = "department-service"
  
 ```
  
- ### Architecture des projets
+### Architecture des projets
  
  - Pour `employee-backend-service`
  
