@@ -48,7 +48,7 @@
 
 # Building a Middleware Service using Open Feign:
 
-![spring-boot-mongodb](https://user-images.githubusercontent.com/97687670/173395599-ccb75ce4-2c4d-41bf-9d88-2546a684c99e.PNG)
+![spring-boot](https://user-images.githubusercontent.com/82464964/221432569-bb8ce91c-1ebe-4614-8ccc-9dc653152455.png)
 
 #### Introduction
 
