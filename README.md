@@ -58,7 +58,7 @@ un middleware est qu'il connecte de nombreux produits et services differents dan
 Alors qu'est-ce qu'un middleware exactement?
 
 #### Middleware :
-Selon <a href="">Red Had</a>, Les middlewares sont des logiciels et des services en cloud qui fournissent des services et des capacités communs aux applications et aident les développeurs 
+Selon <a href="https://www.redhat.com/en/topics/middleware/what-is-middleware">Red Had</a>, Les middlewares sont des logiciels et des services en cloud qui fournissent des services et des capacités communs aux applications et aident les développeurs 
 et les opérateurs à créer et à déployer des applications plus efficacement. Le middleware agit comme le tissu conjonctif entre les applications, les données et les utilisateurs.
 
 Le middleware fait partie de la terminologie du génie logiciel depuis la fin des années 1960 et, en tant que catégorie, il peut s'appliquer à un large éventail de composants 
@@ -90,15 +90,15 @@ Postman
 
 ### Commençons:
 
-Tout d'abord, nous devons creer deux projets Spring Boot. Pour ce faire, nous utilisons <a href="">Spring Initializr<a>.Ensuite, nous ajouterons pour chaque projet les dependances telles que :
+Tout d'abord, nous devons créer deux projets Spring Boot. Pour ce faire, nous utilisons <a href="https://start.spring.io/">Spring Initializr<a>.Ensuite, nous ajouterons pour chaque projet les dependances telles que :
 
 <dependances>
 
 </dependances>
 
-En cliquant sur "Generate", un dossier zip sera telecharger. Extrayez le contenu, puis ouvrez le projet avec un IDE. L'IDE que j'utiliserai est IntelliJ.
+En cliquant sur "Generate", un dossier zip sera télécharger. Extrayez le contenu, puis ouvrez le projet avec un IDE. L'IDE que j'utiliserai est IntelliJ.
 
-Pour cet demo, j'ai juste prefere de ne pas utiliser une base de donnees. Je vais stocker les donnees de chacune des applications dans un tableau dynamique Java(ArrayList}.
+Pour cet demo, j'ai juste préféré de ne pas utiliser une base de données. Je vais stocker les données de chacune des applications dans un tableau dynamique Java(ArrayList).
 ### NB:
-A chaque fois que vous redemarrez l'application, vous perdrez toutes les donnees que vous avez deja enregistre via l'API REST.
+N'oubliez pas qu'à chaque fois que vous redémarrez l'application, vous perdrez toutes les données que vous avez déjà enregistré via l'API REST.
 
