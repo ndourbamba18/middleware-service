@@ -282,12 +282,16 @@ N'oubliez pas qu'à chaque fois que vous redémarrez l'application, vous perdrez
 Ouvrez `src/main/resources/application.properties`
  
 - Pour `employee-backend-service`:
+```	
 server.port = 8082	
 spring.application.name = "employee-service"
-
+```
+	
 - Pour `department-backend-service`
+```
 server.port = 8081
 spring.application.name = "department-service"
+```
  
 # Architecture des projets
  
