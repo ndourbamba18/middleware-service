@@ -323,5 +323,5 @@ spring.application.name = "department-service"
 ### Postman pour tester les APIs
 
  
-<a href="">Les captures d'écrans</a>
+<a href="https://github.com/ndourbamba18/middleware-service/tree/master/Screenshots">Les captures d'écrans</a>
 	
