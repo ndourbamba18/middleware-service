@@ -52,31 +52,31 @@
 
 #### Introduction
 
-<p>Dans cet demo, je vais montrer comment construire un middleware service en utilisant Spring Boot a l'aide de certaines dependances telles que le Feign client, Lombok etc...
+Dans cet demo, je vais montrer comment construire un middleware service en utilisant Spring Boot a l'aide de certaines dependances telles que le Feign client, Lombok etc...
 Ce middleware vous permet d'envoyer une requete HTTP a plusieurs API(Application Programming Interface) differentes. Mais il serait
 plus facile de combiner uniquement ce dont vous avez besoin de ces differentes API en une seule API.
 Un middleware applicatif nous permet d'avoir une source de données uniques et personnalisée. L'un des principaux avantages d'avoir 
 un middleware est qu'il connecte de nombreux produits et services differents dans un systeme partagé.
-Alors qu'est-ce qu'un middleware exactement?</p>
+Alors qu'est-ce qu'un middleware exactement?
 
 #### Middleware :
-<p>Selon <a href="https://www.redhat.com/en/topics/middleware/what-is-middleware">Red Had</a>, Les middlewares sont des logiciels et des services en cloud qui fournissent des services et des capacités communs aux applications et aident les développeurs 
-et les opérateurs à créer et à déployer des applications plus efficacement. Le middleware agit comme le tissu conjonctif entre les applications, les données et les utilisateurs.</p>
+Selon <a href="https://www.redhat.com/en/topics/middleware/what-is-middleware">Red Had</a>, Les middlewares sont des logiciels et des services en cloud qui fournissent des services et des capacités communs aux applications et aident les développeurs 
+et les opérateurs à créer et à déployer des applications plus efficacement. Le middleware agit comme le tissu conjonctif entre les applications, les données et les utilisateurs.
 
-<p>Le middleware fait partie de la terminologie du génie logiciel depuis la fin des années 1960 et, en tant que catégorie, il peut s'appliquer à un large éventail de composants 
+Le middleware fait partie de la terminologie du génie logiciel depuis la fin des années 1960 et, en tant que catégorie, il peut s'appliquer à un large éventail de composants 
 logiciels modernes. Le middleware peut inclure des moteurs d'exécution d'applications, l'intégration d'applications d'entreprise et divers types de services en cloud.
-La gestion des données, les services d'application, la messagerie, l'authentification et la gestion des interfaces de programmation d'applications (API) sont tous couramment traités par les middlewares.</p>
+La gestion des données, les services d'application, la messagerie, l'authentification et la gestion des interfaces de programmation d'applications (API) sont tous couramment traités par les middlewares.
 
-<p>Aujourd'hui, le middleware est la base technologique des architectures cloud-native modernes. Pour les organisations disposant d'environnements multi-clouds et conteneurisés, 
-les middlewares peuvent rendre rentables le développement et l'exécution d'applications à grande échelle.</p>
+Aujourd'hui, le middleware est la base technologique des architectures cloud-native modernes. Pour les organisations disposant d'environnements multi-clouds et conteneurisés, 
+les middlewares peuvent rendre rentables le développement et l'exécution d'applications à grande échelle.
 
 #### Feign :
 
-<p>Le feign est un service Web déclaratif créé par Netflix qui fournit un degré élevé d'abstraction pour effectuer des appels d'API REST(Representational State Transfer). De meme, il supprime le besoin d'écrire des codes de requetes HTTP de base tout en offrant simultanément efficacité et netteté au code source.</p>
+Le feign est un service Web déclaratif créé par Netflix qui fournit un degré élevé d'abstraction pour effectuer des appels d'API REST(Representational State Transfer). De meme, il supprime le besoin d'écrire des codes de requetes HTTP de base tout en offrant simultanément efficacité et netteté au code source.
 
-<p>Par souci de simplicité, nous ferons des appels a un vrai service d'API REST nommé `employee-backend-service` utilisé pour les tests.</p>
+Par souci de simplicité, nous ferons des appels a un vrai service d'API REST nommé `employee-backend-service` utilisé pour les tests.
 
-<p>A la fin de cet article, le lecteur doit comprendre ce qu'est un middleware et savoir quand et comment l'utitliser.De meme, ils doivent se familiariser avec le service Web de Feign Client.</p>
+A la fin de cet article, le lecteur doit comprendre ce qu'est un middleware et savoir quand et comment l'utitliser.De meme, ils doivent se familiariser avec le service Web de Feign Client.
 
 ### Technologies utilises:
 
@@ -90,9 +90,9 @@ les middlewares peuvent rendre rentables le développement et l'exécution d'app
 
 ### Commençons:
 
-<p>Tout d'abord, nous devons créer deux projets Spring Boot. Pour ce faire, nous utilisons <a href="https://start.spring.io/">Spring Initializr<a>.Ensuite, nous ajouterons pour chaque projet les dependances telles que :</p>
+Tout d'abord, nous devons créer deux projets Spring Boot. Pour ce faire, nous utilisons <a href="https://start.spring.io/">Spring Initializr<a>.Ensuite, nous ajouterons pour chaque projet les dependances telles que :
 
- ##### pom.xml pour `employee-backend-service`
+- pom.xml pour `employee-backend-service`
  
  ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -180,7 +180,7 @@ les middlewares peuvent rendre rentables le développement et l'exécution d'app
 
 ```xml  
 
- ##### pom.xml pour `department-backend-service`
+- pom.xml pour `department-backend-service`
  
  ```xml
  
@@ -269,37 +269,29 @@ les middlewares peuvent rendre rentables le développement et l'exécution d'app
 
  ```xml
 
-<p>En cliquant sur "Generate", un dossier zip sera télécharger. 
+En cliquant sur "Generate", un dossier zip sera télécharger. 
   Extrayez le contenu, puis ouvrez le projet avec un IDE. 
-  L'IDE que j'utiliserai est IntelliJ.</p>
+  L'IDE que j'utiliserai est IntelliJ.
 
-<p>Pour cet demo, j'ai juste préféré de ne pas utiliser une base de données.
- Je vais stocker les données de chacune des applications dans un tableau dynamique Java(ArrayList).</p>
+Pour cet demo, j'ai juste préféré de ne pas utiliser une base de données.
+ Je vais stocker les données de chacune des applications dans un tableau dynamique Java(ArrayList).
 #### NB:
-<p>N'oubliez pas qu'à chaque fois que vous redémarrez l'application, vous perdrez toutes les données que vous avez déjà 
-	enregistré via l'API REST.</p>
+N'oubliez pas qu'à chaque fois que vous redémarrez l'application, vous perdrez toutes les données que vous avez déjà 
+	enregistré via l'API REST.
 
- ### Configure Spring Datasource, App properties
-Oovrez `src/main/resources/application.properties`
+- Configure Spring Datasource, App properties
+Ouvrez `src/main/resources/application.properties`
  
 - Pour `employee-backend-service`:
 ```
-### application.properties
- 
-##### Server Configuration
+- application.properties
 server.port = 8082
-
-##### Application Name
 spring.application.name = "employee-service"
 
 ```
 - Pour `department-backend-service`
 ```
- ### application.properties
-##### Server Configuration
 server.port = 8081
-
-##### Application Name
 spring.application.name = "department-service"
  
 ```
