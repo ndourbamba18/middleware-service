@@ -76,7 +76,7 @@ Par souci de simplicité, nous ferons des appels a un vrai service d'API REST no
 
 A la fin de cet article, le lecteur doit comprendre ce qu'est un middleware et savoir quand et comment l'utitliser.De meme, ils doivent se familiariser avec le service Web de Feign Client.
 
-### Technologies utilises:
+### Technologies utilisés:
 
 - Java 17
 - Spring Boot 2.6.4
@@ -90,8 +90,10 @@ A la fin de cet article, le lecteur doit comprendre ce qu'est un middleware et s
 
 Tout d'abord, nous devons créer deux projets Spring Boot. Pour ce faire, nous utilisons <a href="https://start.spring.io/">Spring Initializr<a>.Ensuite, nous ajouterons pour chaque projet les dependances telles que :
 
+```
 - pom.xml pour `employee-backend-service`
  
+```
  ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -177,9 +179,10 @@ Tout d'abord, nous devons créer deux projets Spring Boot. Pour ce faire, nous u
 </project>
 
 ```xml  
-###
+```
 - pom.xml pour `department-backend-service`
  
+```
  ```xml
  
  <?xml version="1.0" encoding="UTF-8"?>
@@ -266,7 +269,7 @@ Tout d'abord, nous devons créer deux projets Spring Boot. Pour ce faire, nous u
 </project>
 
  ```xml
--
+```
 
 En cliquant sur "Generate", un dossier zip sera télécharger. Extrayez le contenu, puis ouvrez le projet avec un IDE. L'IDE que j'utiliserai est IntelliJ.
 
@@ -286,7 +289,9 @@ spring.application.name = "employee-service"
 server.port = 8081
 spring.application.name = "department-service"
  
+```
 # Architecture des projets
+```
  
  - Pour `employee-backend-service`
  ```
@@ -316,6 +321,6 @@ spring.application.name = "department-service"
 ### Postman pour tester les APIs
 ```
  
- <a href="">Les captures d'ecrans</a>
+ <a href="">Les captures d'écrans</a>
 	
 ```
