@@ -324,15 +324,17 @@ spring.application.name = "department-service"
 ### Postman pour tester les APIs
 
 
-- Getting all employees via employee-backend-service api rest 
-	
-![all-employees-via-employee-service](https://user-images.githubusercontent.com/82464964/221511432-e630a648-36b4-41c3-b896-7d9d45d3fbdf.PNG)	
-	
+### Getting all employees via employee-backend-service api rest
+- url ===> http://localhost:8082/api/v1/employees	
+![all-employees-via-employee-service](https://user-images.githubusercontent.com/82464964/221511432-e630a648-36b4-41c3-b896-7d9d45d3fbdf.PNG)		
 ### Getting all employees via department-backend-service api rest
+- url ===> http://localhost:8082/api/v1/employees
 ![all-employees-via-department-service](https://user-images.githubusercontent.com/82464964/221512216-97622b54-4c1e-4dcf-b414-03b0b19fa5ef.PNG)
 ### Getting employee by id via department-backend-service rest
+- url ===> http://localhost:8082/api/v1/employees
 ![find-employee-via-department-service](https://user-images.githubusercontent.com/82464964/221512409-1fcc5565-cf17-4b2a-999e-2e5acd75fe76.PNG)
 ### Getting employee by department name via department-backend-service api rest
+- url ===> http://localhost:8082/api/v1/employees
 
  
 <a href="https://github.com/ndourbamba18/middleware-service/tree/master/Screenshots">Les captures d'écrans</a>
