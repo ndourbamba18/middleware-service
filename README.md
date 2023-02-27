@@ -333,7 +333,7 @@ spring.application.name = "department-service"
 	
 ![all-employees-via-department-service](https://user-images.githubusercontent.com/82464964/221512216-97622b54-4c1e-4dcf-b414-03b0b19fa5ef.PNG)
 ### Getting employee by id via department-backend-service rest
-- url ===> http://localhost:8081/api/v1/departments/employees/findEmployee/
+- url ===> http://localhost:8081/api/v1/departments/employees/findEmployee/5
 	
 ![find-employee-via-department-service](https://user-images.githubusercontent.com/82464964/221512409-1fcc5565-cf17-4b2a-999e-2e5acd75fe76.PNG)
 ### Getting employee by department name via department-backend-service api rest
@@ -349,6 +349,16 @@ spring.application.name = "department-service"
 	
 ![delete-employee-via-department-service](https://user-images.githubusercontent.com/82464964/221514403-d688911d-eec9-4414-bcc0-c4724d837e91.PNG)
 
+```
+### Docker
+
+- Deploying Multitple Microservices using network
+
+![docker-image](https://user-images.githubusercontent.com/82464964/221518287-0581af20-44db-4f8e-a071-471953f17da8.PNG)
+	
+- Publishing docker image on docker registry
+
+![docker-registry](https://user-images.githubusercontent.com/82464964/221518402-fc739b80-394d-411c-a59a-5a6ad0065690.PNG)	
  
 <a href="https://github.com/ndourbamba18/middleware-service/tree/master/Screenshots">Les captures d'écrans</a>
 	
