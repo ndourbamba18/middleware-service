@@ -325,22 +325,28 @@ spring.application.name = "department-service"
 
 
 ### Getting all employees via employee-backend-service api rest
-- url ===> http://localhost:8082/api/v1/employees	
+- url ===> http://localhost:8082/api/v1/employees
+	
 ![all-employees-via-employee-service](https://user-images.githubusercontent.com/82464964/221511432-e630a648-36b4-41c3-b896-7d9d45d3fbdf.PNG)		
 ### Getting all employees via department-backend-service api rest
 - url ===> http://localhost:8081/api/v1/departments/employees/findAllEmployees
+	
 ![all-employees-via-department-service](https://user-images.githubusercontent.com/82464964/221512216-97622b54-4c1e-4dcf-b414-03b0b19fa5ef.PNG)
 ### Getting employee by id via department-backend-service rest
 - url ===> http://localhost:8081/api/v1/departments/employees/findEmployee/
+	
 ![find-employee-via-department-service](https://user-images.githubusercontent.com/82464964/221512409-1fcc5565-cf17-4b2a-999e-2e5acd75fe76.PNG)
 ### Getting employee by department name via department-backend-service api rest
-- url ===> http://localhost:8081/api/v1/departments/employees
+- url ===> localhost:8081/api/v1/departments/employees/findAllEmployeesByDepartmentName/Development
+	
 ![all-employy-by-department](https://user-images.githubusercontent.com/82464964/221516165-1301f1f0-c51d-4889-a64d-e3611e84ad95.PNG)
 ### Adding new employee via department-backend-service api rest
 - url ===> http://localhost:8081/api/v1/departments/employees/addEmployee
+	
 ![addemployee-via-department-service](https://user-images.githubusercontent.com/82464964/221514228-b46de7a9-8caa-40cd-9ef3-0b12b7cdcee6.PNG)
 ### Deleting employee by id via department-backend-service api rest
 - url ===> http://localhost:8081/api/v1/departments/employees/deleteEmployee/5
+	
 ![delete-employee-via-department-service](https://user-images.githubusercontent.com/82464964/221514403-d688911d-eec9-4414-bcc0-c4724d837e91.PNG)
 
  
