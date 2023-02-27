@@ -320,33 +320,20 @@ spring.application.name = "department-service"
 	
 ![department-server](https://user-images.githubusercontent.com/82464964/221433980-72407676-edbf-4895-82b6-e6f0291366c7.PNG)
 
+	
 ### Postman pour tester les APIs
 
-```
-### Getting all employees 
+
+- Getting all employees via employee-backend-service api rest 
 	
-![all-employees-via-employee-service](https://user-images.githubusercontent.com/82464964/221511432-e630a648-36b4-41c3-b896-7d9d45d3fbdf.PNG)
+![all-employees-via-employee-service](https://user-images.githubusercontent.com/82464964/221511432-e630a648-36b4-41c3-b896-7d9d45d3fbdf.PNG)	
 	
-```	
-	
-### Save employee
-![01](https://user-images.githubusercontent.com/97687670/173397164-347b38da-8d3c-4e71-9946-77eba1a33000.PNG)
-### Save employee again
-![02](https://user-images.githubusercontent.com/97687670/173397181-6c4f2824-62df-4d5c-a98c-a38c64dfe23a.PNG)
-### Get all employees
-![05](https://user-images.githubusercontent.com/97687670/173397590-9176a395-7c8a-41f6-bbdd-61ea68989687.PNG)
-### Get employee by id
-![03](https://user-images.githubusercontent.com/97687670/173400014-eb236cc7-a5a9-4d7f-8acb-50727cd582dc.PNG)
-### Get employee by a valid id
-![04](https://user-images.githubusercontent.com/97687670/173399137-185424c2-7b6b-4ecb-8b11-abc78884baec.PNG)
-### Edit employee by id
-![edit](https://user-images.githubusercontent.com/97687670/173397899-6c0f28f6-1ee1-4d0c-a16d-56e46dc0a2ce.PNG)
-### Delete employee by id
-![delete](https://user-images.githubusercontent.com/97687670/173397922-dfa3d458-b73e-45b6-87fd-09645791343b.PNG)
-### Get the number of employees that exist in the database
-![count](https://user-images.githubusercontent.com/97687670/173397936-1e367496-f5f6-4400-a0b7-bebb356532c7.PNG)
-### All data in the database
-![all-data](https://user-images.githubusercontent.com/97687670/173398034-9bf9c736-aa16-4446-b1e0-acc485183765.PNG)
+### Getting all employees via department-backend-service api rest
+![all-employees-via-department-service](https://user-images.githubusercontent.com/82464964/221512216-97622b54-4c1e-4dcf-b414-03b0b19fa5ef.PNG)
+### Getting employee by id via department-backend-service rest
+![find-employee-via-department-service](https://user-images.githubusercontent.com/82464964/221512409-1fcc5565-cf17-4b2a-999e-2e5acd75fe76.PNG)
+### Getting employee by department name via department-backend-service api rest
+
  
 <a href="https://github.com/ndourbamba18/middleware-service/tree/master/Screenshots">Les captures d'écrans</a>
 	
