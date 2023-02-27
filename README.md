@@ -337,10 +337,10 @@ spring.application.name = "department-service"
 - url ===> http://localhost:8082/api/v1/employees
 
 ### Adding new employee via department-backend-service api rest
-- url ===> http://localhost:8082/api/v1/employees
+- url ===> http://localhost:8081/api/v1/departments/employees/addEmployee
 ![addemployee-via-department-service](https://user-images.githubusercontent.com/82464964/221514228-b46de7a9-8caa-40cd-9ef3-0b12b7cdcee6.PNG)
 ### Deleting employee by id via department-backend-service api rest
-- url ===> http://localhost:8082/api/v1/employees
+- url ===> http://localhost:8081/api/v1/departments/employees/deleteEmployee/5
 ![delete-employee-via-department-service](https://user-images.githubusercontent.com/82464964/221514403-d688911d-eec9-4414-bcc0-c4724d837e91.PNG)
 
  
