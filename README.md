@@ -352,21 +352,21 @@ spring.application.name = "department-service"
 
 ### Docker
 
-- docker network create middleware=service
+- docker network create middleware-service
 
 - docker image build -t employee-backend-service .
 	
 - docker image build -t department-backend-service .
 	
-- docker run -d -p 8081:8081 --name department-service --network=middleware-service employee-backend-service
+- docker run -d -p 8081:8081 --name department-service --network=middleware-service department-backend-service
 	
 - docker run -d -p 8082:8082 --name employee-service --network=middleware-service employee-backend-service
 	
-- Deploying Multitple Microservices using network
+- Deploying Multitple Spring Boot Microservices to Docker using Docker Network
 
 ![docker-image](https://user-images.githubusercontent.com/82464964/221518287-0581af20-44db-4f8e-a071-471953f17da8.PNG)
 	
-- Publishing docker image on docker registry
+- Publishing Docker image to DockerHub
 
 - docker login
 	
