@@ -352,12 +352,36 @@ spring.application.name = "department-service"
 
 ### Docker
 
+- docker network create middleware=service
+
+- docker image build -t employee-backend-service .
+	
+- docker image build -t department-backend-service .
+	
+- docker run -d -p 8081:8081 --name department-service --network=middleware-service employee-backend-service
+	
+- docker run -d -p 8082:8082 --name employee-service --network=middleware-service employee-backend-service
+	
 - Deploying Multitple Microservices using network
 
 ![docker-image](https://user-images.githubusercontent.com/82464964/221518287-0581af20-44db-4f8e-a071-471953f17da8.PNG)
 	
 - Publishing docker image on docker registry
 
+- docker login
+	
+- docker image ls
+	
+- docker image tag employee-backend-service ndourbamba18/employee-backend-service
+	
+- docker image tag department-backend-service ndourbamba18/department-backend-service
+
+- docker image ls 
+
+- docker image push ndourbamba18/employee-backend-service
+
+- docker image push ndourbamba18/employee-backend-service
+	
 ![docker-registry](https://user-images.githubusercontent.com/82464964/221518402-fc739b80-394d-411c-a59a-5a6ad0065690.PNG)	
  
 <a href="https://github.com/ndourbamba18/middleware-service/tree/master/Screenshots">Les captures d'écrans</a>
