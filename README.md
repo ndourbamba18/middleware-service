@@ -384,5 +384,5 @@ spring.application.name = "department-service"
 	
 ![docker-registry](https://user-images.githubusercontent.com/82464964/221518402-fc739b80-394d-411c-a59a-5a6ad0065690.PNG)	
  
-<a href="https://github.com/ndourbamba18/middleware-service/tree/master/Screenshots">Les captures d'écrans</a>
+<a href="https://github.com/ndourbamba18/middleware-service/tree/master/Screenshots">All Screenshots</a>
 	
