@@ -293,7 +293,7 @@ server.port = 8081
 spring.application.name = "department-service"
 ```
  
-# Architecture des projets
+# Structure des projets
  
  - Pour `employee-backend-service`
 	
@@ -350,7 +350,7 @@ spring.application.name = "department-service"
 ![delete-employee-via-department-service](https://user-images.githubusercontent.com/82464964/221514403-d688911d-eec9-4414-bcc0-c4724d837e91.PNG)
 
 
-### Docker
+## Docker For Containerization
 
 - docker network create middleware-service
 
@@ -362,11 +362,11 @@ spring.application.name = "department-service"
 	
 - docker run -d -p 8082:8082 --name employee-service --network=middleware-service employee-backend-service
 	
-- Deploying Multitple Spring Boot Microservices to Docker using Docker Network
+### Deploying Multitple Spring Boot Microservices to Docker using Docker Network
 
 ![docker-image](https://user-images.githubusercontent.com/82464964/221518287-0581af20-44db-4f8e-a071-471953f17da8.PNG)
 	
-- Publishing Docker image to DockerHub
+### Publishing Docker image to DockerHub
 
 - docker login
 	
